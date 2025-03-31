@@ -114,7 +114,7 @@
               id="navbarCollapse"
             >
               <div class="navbar-nav mr-auto py-0">
-                <a href="/" class="nav-item nav-link active">Home</a>
+                <a href="/" class="nav-item nav-link">Home</a>
                 <a href="shop.html" class="nav-item nav-link">Shop</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -144,175 +144,75 @@
     </div>
     <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid mb-3">
+    <!-- Shop Detail Start -->
+    <div class="container-fluid pb-5">
       <div class="row px-xl-5">
-        <div class="col-lg-8">
+        <div class="col-lg-5 mb-30">
           <div
-            id="header-carousel"
-            class="carousel slide carousel-fade mb-30 mb-lg-0"
+            id="product-carousel"
+            class="carousel slide"
             data-ride="carousel"
           >
-            <div class="carousel-inner">
-              <div
-                class="carousel-item position-relative active"
-                style="height: 430px"
-              >
-                <video
-                  class="position-absolute w-100 h-100"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  style="object-fit: cover"
-                >
-                  <source src="images/vetabelle-video-1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+            <div class="carousel-inner bg-light">
+              <div class="carousel-item active">
+                <img class="w-100 h-100" src="" alt="Image" />
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 d-none d-lg-flex flex-column">
-          <div class="product-offer mb-30" style="height: 200px">
-            <img
-              class="img-fluid"
-              src="images/vetabelle-image-1.jpg"
-              alt="vetabelle image"
-            />
-            <div class="offer-text">
-              <h6 class="text-white text-uppercase">Save 20%</h6>
-              <h3 class="text-white mb-3">Special Offer</h3>
-              <a href="shop.html" class="btn btn-primary">Shop Now</a>
+
+        <div class="col-lg-7 h-auto mb-30">
+          <div class="h-100 bg-light p-30">
+            <h3></h3>
+            <div class="d-flex mb-3">
+              <div class="text-primary mr-2">
+                <small class="fas fa-star"></small>
+                <small class="fas fa-star"></small>
+                <small class="fas fa-star"></small>
+                <small class="fas fa-star"></small>
+                <small class="fas fa-star"></small>
+              </div>
             </div>
+            <h3 class="font-weight-semi-bold mb-4">$150.00</h3>
+            <p class="mb-4">
+              Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat
+              diam stet sit clita ea. Sanc ipsum et, labore clita lorem magna
+              duo dolor no sea Nonumy
+            </p>
+            <!-- <div class="d-flex align-items-center mb-4 pt-2">
+              <div class="input-group quantity mr-3" style="width: 130px">
+                <div class="input-group-btn">
+                  <button class="btn btn-primary btn-minus">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control bg-secondary border-0 text-center"
+                  value="1"
+                />
+                <div class="input-group-btn">
+                  <button class="btn btn-primary btn-plus">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+              <button class="btn btn-primary px-3">
+                <i class="fa fa-shopping-cart mr-1"></i> Add To Cart
+              </button>
+            </div> -->
+            <a
+              href="https://wa.me/233208739590?text=Hello, I'm interested in purchasing this product."
+              target="_blank"
+              class="btn btn-primary px-3"
+            >
+              <i class="fab fa-whatsapp mr-1"></i> Chat Seller to Buy
+            </a>
           </div>
-          <div class="product-offer mb-30" style="height: 200px">
-            <img
-              class="img-fluid"
-              src="images/vetabelle-image-2.jpg"
-              alt="Vetabelle image"
-            />
-            <div class="offer-text">
-              <h6 class="text-white text-uppercase">Save 20%</h6>
-              <h3 class="text-white mb-3">Special Offer</h3>
-              <a href="shop.html" class="btn btn-primary">Shop Now</a>
-            </div>
-          </div>
         </div>
       </div>
     </div>
-    <!-- Carousel End -->
-
-    <!-- Products Start -->
-    <div class="container-fluid pt-5 pb-3">
-      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-        <span class="bg-secondary pr-3">Featured Products</span>
-      </h2>
-      <div class="row px-xl-5">
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a href="product-detail.html?id=1" class="text-decoration-none">
-            <div class="product-item bg-light mb-4">
-              <div class="product-img position-relative overflow-hidden">
-                <img
-                  class="img-fluid w-100"
-                  src="images/Vetabelle-Elderberry.jpg"
-                  alt="Vetabelle Elderberry: Vitamin C + Ginger"
-                />
-              </div>
-              <div class="text-center py-4">
-                <h6 class="text-truncate">Elderberry: Vitamin C + Ginger</h6>
-                <div
-                  class="d-flex align-items-center justify-content-center mt-2"
-                >
-                  <h5>GH₵ 599.00</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a href="product-detail.html?id=2" class="text-decoration-none">
-            <div class="product-item bg-light mb-4">
-              <div class="product-img position-relative overflow-hidden">
-                <img
-                  class="img-fluid w-100 mt-5 pt-4"
-                  src="images/Vetabelle-Biotin.png"
-                  alt="Vetabelle Biotin: Collagen & Keratin"
-                />
-              </div>
-              <div class="text-center py-4">
-                <h6 class="text-truncate">Biotin: Collagen & Keratin</h6>
-                <div
-                  class="d-flex align-items-center justify-content-center mt-2"
-                >
-                  <h5>GH₵ 599.00</h5>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a href="product-detail.html?id=3" class="text-decoration-none">
-            <div class="product-item bg-light mb-4">
-              <div class="product-img position-relative overflow-hidden">
-                <img
-                  class="img-fluid w-100 mt-5 pt-4"
-                  src="images/Vetabelle-promo.jpg"
-                  alt="Vetabelle Elderberry + Biotin"
-                />
-              </div>
-              <div class="text-center py-4">
-                <h6 class="text-truncate">Elderberry + Biotin</h6>
-                <div
-                  class="d-flex align-items-center justify-content-center mt-2"
-                >
-                  <h5>GH₵ 1,100.00</h5>
-                  <h6 class="text-muted ml-2"><del>GH₵ 1,200.00</del></h6>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <!-- Products End -->
-
-    <!-- About start -->
-    <div class="container-fluid pt-5 pb-3">
-      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-        <span class="bg-secondary pr-3">About Us</span>
-      </h2>
-      <div class="row px-3 px-xl-5">
-        <p>
-          <strong>Vetabelle</strong> is dedicated to empowering women by
-          enhancing their natural beauty and boosting their confidence. Our
-          mission is to help you embrace your inner strength while living a life
-          that reflects your values and aspirations.
-        </p>
-        <p>
-          We provide high-quality supplements and personal care products
-          designed to support your journey to wellness, nurturing your body,
-          mind, and spirit.
-        </p>
-        <ul>
-          <li>
-            <strong>Biotin with Collagen & Keratin</strong> - For luscious hair,
-            youthful skin, and strong nails.
-          </li>
-          <li>
-            <strong>5-in-1 Immune Support Elderberry</strong> - Boost your
-            immunity with Vitamin C, Zinc, and Ginger.
-          </li>
-        </ul>
-        <p>
-          Join us on this journey of self-care and confidence-building.
-          <strong>At Vetabelle, beauty starts from within!</strong>
-        </p>
-      </div>
-    </div>
-    <!-- About end -->
+    <!-- Shop Detail End -->
 
     <!-- Footer Start -->
     <footer class="container-fluid bg-dark text-secondary mt-5 pt-5">
@@ -400,6 +300,51 @@
     <a href="#" class="btn btn-primary back-to-top"
       ><i class="fa fa-angle-double-up"></i
     ></a>
+
+    <script>
+      const products = {
+        1: {
+          name: "Elderberry: Vitamin C + Ginger",
+          price: "GH₵ 599.00",
+          image: "images/Vetabelle-Elderberry.jpg",
+          description:
+            "Vetabelle Elderberry is a powerful immune-boosting formula enriched with Vitamin C and Ginger. Elderberry is packed with antioxidants that help fight free radicals and support the body’s natural defense system. Combined with Vitamin C for enhanced immunity and Ginger for digestive and anti-inflammatory benefits, this supplement is your go-to for overall wellness and vitality. Perfect for those looking to strengthen their immune system while promoting healthy skin and energy levels.",
+        },
+        2: {
+          name: "Biotin: Collagen & Keratin",
+          price: "GH₵ 599.00",
+          image: "images/Vetabelle-Biotin.png",
+          description:
+            "Designed for those who want to enhance their natural beauty from within, Vetabelle Biotin combines three powerhouse ingredients: Biotin, Collagen, and Keratin. Biotin supports hair growth and strengthens nails, while Collagen works to improve skin elasticity, reducing fine lines and wrinkles. Keratin enhances hair texture and resilience, making it less prone to breakage. This all-in-one supplement is perfect for achieving thicker hair, glowing skin, and stronger nails while also supporting joint and muscle health.",
+        },
+        3: {
+          name: "Elderberry + Biotin",
+          price: "GH₵ 1,100.00",
+          image: "images/Vetabelle-promo.jpg",
+          description:
+            "Get the best of both worlds with Vetabelle’s Elderberry + Biotin combo. This ultimate wellness pack combines the immune-boosting power of Elderberry, Vitamin C, and Ginger with the beauty-enhancing benefits of Biotin, Collagen, and Keratin. Support your overall health while nourishing your hair, skin, and nails from the inside out. Whether you want to boost your immune system, promote youthful skin, or achieve fuller, healthier hair, this bundle has you covered!",
+        },
+      };
+      // Get product ID from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      // Check if product exists
+      if (products[productId]) {
+        const product = products[productId];
+
+        // Update the product details dynamically
+        document.querySelector("h3").textContent = product.name;
+        document.querySelector(".font-weight-semi-bold").textContent =
+          product.price;
+        document.querySelector("p.mb-4").textContent = product.description;
+        document.querySelector(".carousel-item img").src = product.image;
+      } else {
+        // If product not found, redirect or show an error message
+        document.querySelector(".container-fluid").innerHTML =
+          "<h3>Product not found</h3>";
+      }
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
