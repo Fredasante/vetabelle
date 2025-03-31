@@ -2,13 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Vetabelle</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Free HTML Templates" name="keywords" />
-    <meta content="Free HTML Templates" name="description" />
+    <title>Vetabelle | High-Quality Beauty & Wellness Supplements</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Vetabelle | High-Quality Beauty & Wellness Supplements"
+    />
+    <meta
+      name="description"
+      content="Discover Vetabelle's premium beauty supplements enriched with Biotin, Collagen, and Keratin. Achieve healthy hair, glowing skin, and strong nails naturally."
+    />
+    <meta
+      name="keywords"
+      content="Vetabelle, beauty supplements, biotin for hair, collagen for skin, keratin, wellness products, hair growth vitamins, skin hydration, nail strength"
+    />
+    <meta name="author" content="Vetabelle" />
+
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="product" />
+    <meta
+      property="og:title"
+      content="Vetabelle | Premium Beauty Supplements"
+    />
+    <meta
+      property="og:description"
+      content="Achieve beauty from within with Vetabelle's scientifically formulated supplements for hair, skin, and nails. Shop now!"
+    />
+    <meta
+      property="og:url"
+      content="https://vetabelle.com/product-detail.html?id=1"
+    />
+    <meta
+      property="og:image"
+      content="https://vetabelle.com/images/vetabelle-logo.jpg"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://vetabelle.com/product-detail.html?id=1"
+    />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon" />
+    <link href="images/vetabelle-logo.jpg" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -29,6 +65,60 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <script type="application/ld+json">
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      const products = {
+        1: {
+          name: "Elderberry: Vitamin C + Ginger",
+          price: "599.00",
+          image: "https://vetabelle.com/images/Vetabelle-Elderberry.jpg",
+          description: "Boost your immune system with Vetabelle Elderberry, rich in antioxidants and Vitamin C for overall health.",
+          availability: "InStock"
+        },
+        2: {
+          name: "Biotin: Collagen & Keratin",
+          price: "599.00",
+          image: "https://vetabelle.com/images/Vetabelle-Biotin.png",
+          description: "Enhance your natural beauty with Biotin, Collagen & Keratin for strong hair, glowing skin, and healthy nails.",
+          availability: "InStock"
+        },
+        3: {
+          name: "Elderberry + Biotin Combo",
+          price: "1100.00",
+          image: "https://vetabelle.com/images/Vetabelle-promo.jpg",
+          description: "The ultimate beauty and wellness duo: Elderberry for immunity + Biotin for hair, skin, and nails.",
+          availability: "InStock"
+        }
+      };
+
+      if (products[productId]) {
+        const product = products[productId];
+
+        document.write(`
+          {
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "${product.name}",
+            "image": "${product.image}",
+            "description": "${product.description}",
+            "brand": {
+              "@type": "Brand",
+              "name": "Vetabelle"
+            },
+            "offers": {
+              "@type": "Offer",
+              "priceCurrency": "GHS",
+              "price": "${product.price}",
+              "availability": "https://schema.org/${product.availability}",
+              "url": "https://vetabelle.com/product-detail.html?id=${productId}"
+            }
+          }
+        `);
+      }
+    </script>
   </head>
 
   <body>
