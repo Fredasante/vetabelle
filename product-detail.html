@@ -202,7 +202,8 @@
               </button>
             </div> -->
             <a
-              href="https://wa.me/233208739590?text=Hello, I'm interested in purchasing this product."
+              id="whatsapp-btn"
+              href="#"
               target="_blank"
               class="btn btn-primary px-3"
             >
@@ -343,6 +344,24 @@
         // If product not found, redirect or show an error message
         document.querySelector(".container-fluid").innerHTML =
           "<h3>Product not found</h3>";
+      }
+
+      const phoneNumber = "233208739590"; // Seller's WhatsApp number
+
+      if (products[productId]) {
+        const product = products[productId];
+
+        // Update the WhatsApp chat button with the product name
+        const message = `Hello, I'm interested in purchasing ${encodeURIComponent(
+          product.name
+        )}. Can you provide more details?`;
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        // Update the button href
+        const whatsappBtn = document.querySelector("#whatsapp-btn");
+        if (whatsappBtn) {
+          whatsappBtn.href = whatsappLink;
+        }
       }
     </script>
 
