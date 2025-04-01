@@ -143,8 +143,7 @@
         <div class="col-lg-3 d-none d-lg-block">
           <a
             class="btn d-flex align-items-center justify-content-between bg-primary w-100"
-            data-toggle="collapse"
-            href="#navbar-vertical"
+            href="/"
             style="height: 65px; padding: 0 30px"
           >
             <h5 class="text-white m-0 text-uppercase">Vetabelle</h5>
@@ -407,9 +406,24 @@
           price: "GH₵ 1,100.00",
           image: "images/Vetabelle-promo.jpg",
           description:
-            "Get the best of both worlds with Vetabelle’s Elderberry + Biotin combo. This ultimate wellness pack combines the immune-boosting power of Elderberry, Vitamin C, and Ginger with the beauty-enhancing benefits of Biotin, Collagen, and Keratin. Support your overall health while nourishing your hair, skin, and nails from the inside out. Whether you want to boost your immune system, promote youthful skin, or achieve fuller, healthier hair, this bundle has you covered!",
+            "Get the best of both worlds with Vetabelle's Elderberry + Biotin combo. This ultimate wellness pack combines the immune-boosting power of Elderberry, Vitamin C, and Ginger with the beauty-enhancing benefits of Biotin, Collagen, and Keratin. Support your overall health while nourishing your hair, skin, and nails from the inside out. Whether you want to boost your immune system, promote youthful skin, or achieve fuller, healthier hair, this bundle has you covered!",
+        },
+        4: {
+          name: "Rapid Hair Growth Oil",
+          price: "GH₵ 100.00",
+          image: "images/vetabelle-rapid-hair-growth-oil.png",
+          description:
+            "Vetabelle Rapid Hair Growth Oil is infused with 12 essential herbs to repair damaged hair, reduce hair loss, and promote rapid hair growth. This nutrient-rich oil strengthens hair follicles, enhances hair texture, and adds a healthy shine. Perfect for anyone looking to achieve fuller, healthier hair naturally. Always dilute with a carrier oil before use for optimal results.",
+        },
+        5: {
+          name: "Carrot Oil: Skin & Hair Nourishment",
+          price: "GH₵ 100.00",
+          image: "images/vetabelle-carrot-oil.png",
+          description:
+            "Vetabelle Carrot Oil is formulated to nourish both skin and hair. Packed with vitamins and antioxidants, it helps reduce fine lines and wrinkles, evens skin tone, and promotes a radiant complexion. This lightweight oil also strengthens hair, making it smoother and more manageable. Ideal for daily use to maintain healthy, glowing skin and soft, shiny hair.",
         },
       };
+
       // Get product ID from URL
       const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get("id");
