@@ -9832,7 +9832,8 @@ h6 {
   padding: 30px;
 }
 
-.btn.btn-primary {
+.btn.btn-primary,
+.btn-primary:hover {
   color: white !important;
 }
 
@@ -10103,4 +10104,5 @@ h6 {
   background-color: #c68056 !important;
   border-color: #c68056 !important;
   color: white !important;
+  border-radius: 7px;
 }
